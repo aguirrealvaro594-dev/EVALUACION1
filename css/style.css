@@ -73,6 +73,7 @@ body{
 }
 .card{
     background-color: aquamarine;
+    color: rgb(39, 119, 32) !important;
     padding: 35px 20px;
     border-radius: 10px;
     text-align: center;
@@ -83,7 +84,8 @@ body{
 .card h2{
     margin-bottom: 5px;
     font-size: 30px;
-    color: rgb(207, 216, 255) !important;
+    color: rgb(62, 148, 84) !important;
+    text-align: center;
 }
 .about{
     background-color: rgb(245, 206, 255);
@@ -118,6 +120,9 @@ body{
     font-size: 30px;
     margin-bottom: 5px;
 }
+.imagen{
+    display: none;
+}
 @media screen and (max-width:1024px){
     .nav{
         display: none;
@@ -126,13 +131,17 @@ body{
         display: block;
     }
     .cards{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     .card-extra{
-        display: flex;
+        display: block;
+        text-align: center;
     }
     .hero{
         padding: 45px 20px;
+    }
+    .imagen{
+        display: none;
     }
 }
 @media screen and (max-width: 600px){
@@ -180,5 +189,13 @@ body{
     }
     .card-extra{
         display: none;
+    }
+    .imagen{
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 10px;
     }
 }
