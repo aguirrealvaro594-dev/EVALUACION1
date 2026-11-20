@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+}
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.header{
+    background-color: #6e6d6d;
+    color: white !important;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav{
+    display: flex;
+    gap: 15px;
+}
+.nav a{
+    color: #fffcfc;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu{
+    color: white;
+    font-size: 18px;
+}
+.hero{
+    background-color: #d9eaff;
+    padding: 55px 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #3062ad;
+}
+.hero h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.hero p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.hero button{
+    background-color: #3062ad;
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.card{
+    background-color: aquamarine;
+    padding: 35px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.card-extra{
+    display: none;
+}
+.card h2{
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: rgb(207, 216, 255) !important;
+}
+.about{
+    background-color: rgb(245, 206, 255);
+    color: #7742a3;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+.about h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.cta{
+    background-color: rgb(255, 219, 185);
+    color: #cf7436;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+.cta h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.footer{
+    background-color: #6e6d6d;
+    color: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+.footer h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width:1024px){
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .cards{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .card-extra{
+        display: flex;
+    }
+    .hero{
+        padding: 45px 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        padding: 10px;
+    }
+    .container{
+        gap: 12px;
+    }
+    .header{
+        padding: 25px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .hero{
+        padding: 40px 20px;
+    }
+    hero h1{
+        font-size: 28px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+    .hero button{
+        width: 100%;
+    }
+    .card{
+        padding: 20px 15px;
+    }
+    .about{
+        padding: 25px 20px;
+    }
+    .about h2{
+        font-size: 25px;
+    }
+    .cta{
+        padding: 3px 15px;
+    }
+    .footer{
+        padding: 25px 15px;
+    }
+    .card-extra{
+        display: none;
+    }
+}
